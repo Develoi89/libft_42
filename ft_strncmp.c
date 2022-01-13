@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealonso- <ealonso-@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/11 19:28:41 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 15:27:16 by ealonso-         ###   ########.fr       */
+/*   Created: 2022/01/13 14:58:16 by ealonso-          #+#    #+#             */
+/*   Updated: 2022/01/13 15:44:22 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, char *src, size_t size)
+int	ft_strncmp(char *str, char *str2, int n)
 {
-	size_t	a;
-	size_t	b;
+	int	x;
+	int	y;
+	int	z;
 
-	a = 0;
-	b = 0;
-	while (src[a] != '\0')
-	{
-		a++;
-	}
-	if (size != 0)
-	{
-		while (src[b] != '\0' && b < size - 1)
-		{
-			dest[b] = src[b];
-			b++;
-		}
-			dest[b] = '\0';
-	}
-	return (a);
+	x = ft_strlen(str);
+	y = ft_strlen(str2);
+	z = x - y;
+	return (z);
+}
+
+int main(void)
+{
+	
 }

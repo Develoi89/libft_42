@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/10 17:28:21 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 20:27:59 by ealonso-         ###   ########.fr       */
+/*   Created: 2022/01/13 18:54:13 by ealonso-          #+#    #+#             */
+/*   Updated: 2022/01/13 20:32:14 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *ptr, void *ptr2, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	while (n)
+	size_t	i;
+
+	i = 0;
+	while (*((char *)s + i) != '\0' && i < n)
 	{
-		n--;
-		*((unsigned char *)(ptr + n)) = *((unsigned char *)(ptr2 + n));
+		if (*((char *)s + i) == c)
+			return ((char *)s + i);
+		i++;
 	}
-	return (ptr);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 19:30:23 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 18:08:43 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/13 20:29:45 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,13 @@
 // 	return (0);
 // }
 
-int	ft_strncmp(char *str, char *str2, int n);
+// int	ft_strncmp(char *str, char *str2, int n);
 
-int main(void)
-{
-    char    str[10] = "abcdefghi";
-    char    str2[10] = "abcdffghi";
+// int main(void)
+// {
+//     char    str[10] = "abcdefghi";
+//     char    str2[10] = "abcdffghi";
 
-    
-
-    printf("diferencia:%i", ft_strncmp(str, str2, 6));
-    return (0);
-}
+//     printf("diferencia:%i", ft_strncmp(str, str2, 6));
+//     return (0);
+// }

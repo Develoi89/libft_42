@@ -6,11 +6,11 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 19:30:23 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 20:29:45 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/14 18:39:19 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 // int main(void)
 // {
@@ -43,4 +43,17 @@
 
 //     printf("diferencia:%i", ft_strncmp(str, str2, 6));
 //     return (0);
+// }
+
+// int	main(void)
+// {
+// 	char	s[8] = "qwerty";
+// 	size_t	n;
+// 	int		c;
+
+// 	c = 'w';
+// 	n = 6;
+// 	printf("Original:%s\n", memchr(s, c, n));
+// 	printf("Mine:%s", ft_memchr(s, c, n));
+// 	return (0);
 // }

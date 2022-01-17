@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 18:50:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/14 19:54:31 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/17 14:49:17 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		else
 			return (*((const char *)s1 + i) - *((const char *)s2 + i));
 	}
-	return (0);
-}
-
-
-int	main(void)
-{
-	char	s1[5] = "hola";
-	char	s2[5] = "holu";
-	size_t	n;
-
-	n = 4;
-
-	printf("original:%i\n", memcmp(s1, s2, n));
-	printf("mine:%i", ft_memcmp(s1, s2, n));
-
 	return (0);
 }

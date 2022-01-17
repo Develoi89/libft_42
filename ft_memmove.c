@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ealonso- <ealonso-@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 17:13:22 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/11 19:00:54 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/17 18:51:01 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	if (!dest || !src)
 		return (0);

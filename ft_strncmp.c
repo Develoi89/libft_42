@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 14:58:16 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 18:09:52 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/17 18:50:26 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_strncmp(char *str, char *str2, int n)
 {
 	int	i;
-	int	r;
 
 	i = 0;
 	while (i != n)

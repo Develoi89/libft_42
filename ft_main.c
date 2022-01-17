@@ -6,22 +6,24 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 19:30:23 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/14 18:39:19 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/17 18:54:17 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "libft.h"
 
-// int main(void)
-// {
-// 	char	*r;
-// 	char str[10] = "jolahola";
-// 	int c = 'j';
+int	main(void)
+{
+	char	*r;
+	char str[10] = "jolahola";
+	int c = 'j';
 
-// 	r = ft_strrchr(str, c);
-// 	printf("%s", r);
-// 	return (0);
-// }
+	r = ft_strrchr(str, c);
+	printf("%s", r);
+	return (0);
+}
 
 // int main(void)
 // {
@@ -55,5 +57,19 @@
 // 	n = 6;
 // 	printf("Original:%s\n", memchr(s, c, n));
 // 	printf("Mine:%s", ft_memchr(s, c, n));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char	s1[5] = "hola";
+// 	char	s2[5] = "holu";
+// 	size_t	n;
+
+// 	n = 4;
+
+// 	printf("original:%i\n", memcmp(s1, s2, n));
+// 	printf("mine:%i", ft_memcmp(s1, s2, n));
+
 // 	return (0);
 // }

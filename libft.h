@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 20:34:30 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/17 18:55:18 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int		ft_isdigit(int x);
 int		ft_isalpha(int x);
 int		ft_ialnum(int x);
 int		ft_isascii(int x);
-int		ft_isdigit(int x);
 int		ft_isprint(int x);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *ptr, int x, size_t n);

@@ -28,10 +28,12 @@ $(NAME): $(OBJ)
 
 .PHONY : clean
 clean:
-	rm -f *.o 
+	rm -f *.o
+
 .PHONY : fclean
 fclean: clean
 	rm -f $(NAME)
+
 .PHONY : all
 all: $(NAME)
 

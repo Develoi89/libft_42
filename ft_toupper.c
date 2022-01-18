@@ -3,15 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ealonso- <ealonso-@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 16:15:23 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/12 16:30:30 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/18 17:17:21 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(char c)
+int	ft_toupper(int c)
 {
-	c = c - 32;
-	return (c);
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c - 32;
+		return (c);
+	}
+	else
+		return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/18 15:26:25 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/18 17:17:24 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 # include <stdio.h>
 # include <string.h>
 
-char	ft_toupper(char c);
+int		ft_toupper(int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strchr(const char *s, int c);
-char	ft_tolower(char c);
+int		ft_tolower(int c);
 int		ft_strlen(char *str);
 size_t	ft_strlcpy(char *dest, char *src, size_t size);
 size_t	ft_strlcat(char *dest, char *src, size_t x);

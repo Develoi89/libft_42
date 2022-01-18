@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/17 18:55:18 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/18 15:26:25 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int		ft_isalpha(int x);
 int		ft_ialnum(int x);
 int		ft_isascii(int x);
 int		ft_isprint(int x);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_memcpy(void *ptr, void *ptr2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *ptr, int x, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);

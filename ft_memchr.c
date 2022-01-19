@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 18:54:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/13 20:32:14 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/19 15:08:14 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (*((char *)s + i) != '\0' && i < n)
+	while (i < n)
 	{
 		if (*((char *)s + i) == c)
 			return ((char *)s + i);
+		if (*((char *)s + i) == '\0')
+			return (0);
 		i++;
 	}
 	return (0);

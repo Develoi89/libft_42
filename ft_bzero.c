@@ -6,12 +6,11 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 16:56:35 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/20 19:00:17 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/20 19:03:53 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	*ft_bzero(void *ptr, size_t n)
 {

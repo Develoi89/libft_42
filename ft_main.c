@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 19:30:23 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/17 18:54:17 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/20 18:51:41 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,16 @@ int	main(void)
 // 	printf("original:%i\n", memcmp(s1, s2, n));
 // 	printf("mine:%i", ft_memcmp(s1, s2, n));
 
+// 	return (0);
+// }
+
+
+// int	main(void)
+// {
+// 	const char	dst[] = "AAAAAAAAAAAAA";
+// 	const char	src[] = "MZIRIBMZE";
+
+// 	printf("original:%s\n", strnstr("lorem ipsum dolor sit amet", "ipsumm", 30));
+// 	printf("mine:%s", ft_strnstr("lorem ipsum dolor sit amet", "ipsumm", 30));
 // 	return (0);
 // }

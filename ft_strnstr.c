@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 14:59:08 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/18 14:49:42 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/20 18:51:45 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,26 @@
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
+	int		j;
 
+	j = 0;
 	i = 0;
-	while (i < len)
+	if (needle[0] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] != '\0' && i < len)
 	{
-		if(ft_memcmp())
+		while (j < ft_strlen((char *)needle))
+		{
+			if (haystack[i + j] == needle[j])
+			j++;
+			else
+				break ;
+		}
+		if (j == ft_strlen((char *)needle) && i + j <= len)
+			return ((char *)haystack + i);
+		else
+		i++;
+		j = 0;
 	}
-}
-
-int	main(void)
-{
-	const char	dst[15] = "holacaracolass";
-	const char	src[6] = "laca";
-
-	printf("original:%s\n", strnstr(dst, src, 3));
-	printf("mine:%s", ft_strnstr(dst, src, 3));
-	return (0);
+	return (NULL);
 }

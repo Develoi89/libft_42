@@ -6,11 +6,11 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:40:12 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/17 19:57:11 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/20 19:02:26 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

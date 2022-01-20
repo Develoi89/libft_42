@@ -6,13 +6,10 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 14:59:08 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/20 18:51:45 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/20 18:59:46 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)

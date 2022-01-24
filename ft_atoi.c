@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 19:05:04 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/24 17:13:15 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/24 18:46:29 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ftt_isspace(const char *str, int i)
 {
 	while (str[i] != '\0')
 	{
-		if (str[i] <= 32 || str[i] == 127)
+		if ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 			i++;
 		else
 			break ;
@@ -29,6 +29,8 @@ int	ftt_isnegative(const char *str, int i)
 {
 	if (str[i] == 45)
 		return (-1);
+	else if (str[i] == 43)
+		return (0);
 	else
 		return (1);
 }
@@ -57,23 +59,10 @@ int	ft_atoi(const char *str)
 	c = 0;
 	i = ftt_isspace(str, i);
 	n = ftt_isnegative(str, i);
-	if (n < 0)
+	if (n <= 0)
 		i++;
 	c = ftt_convert(str, i);
-	c = c * n;
+	if (n < 0)
+		c = c * n;
 	return (c);
 }
-
-// int	main(void)
-// {
-// 	int		q;
-// 	int		p;
-// 	char	str[] = "2147483649";
-
-// 	q = ft_atoi(str);
-// 	p = atoi(str);
-// 	printf("result:%i\n", q);
-// 	printf("Real_result:%i", p);
-// 	return (0);
-// }
-

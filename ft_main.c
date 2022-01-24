@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 19:30:23 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/20 18:51:41 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/24 18:46:46 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,18 @@ int	main(void)
 
 // 	printf("original:%s\n", strnstr("lorem ipsum dolor sit amet", "ipsumm", 30));
 // 	printf("mine:%s", ft_strnstr("lorem ipsum dolor sit amet", "ipsumm", 30));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	int		q;
+// 	int		p;
+// 	char	str[] = "9223372036854775808";
+
+// 	q = ft_atoi(str);
+// 	p = atoi(str);
+// 	printf("result:%i\n", q);
+// 	printf("Real_result:%i", p);
 // 	return (0);
 // }

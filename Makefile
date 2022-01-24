@@ -1,11 +1,13 @@
 NAME	=	libft.a
 SRC		=	ft_main.c \
 			ft_atoi.c \
+			ft_calloc.c \
 			ft_toupper.c \
 			ft_strrchr.c \
 			ft_strnstr.c \
 			ft_strchr.c \
 			ft_tolower.c \
+			ft_strdup.c \
 			ft_strlen.c \
 			ft_strlcpy.c \
 			ft_strlcat.c \

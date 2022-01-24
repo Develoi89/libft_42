@@ -1,5 +1,6 @@
 NAME	=	libft.a
 SRC		=	ft_main.c \
+			ft_atoi.c \
 			ft_toupper.c \
 			ft_strrchr.c \
 			ft_strnstr.c \

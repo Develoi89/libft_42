@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 14:59:08 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/20 18:59:46 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/24 17:16:08 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
-	int		j;
+	size_t	j;
 
 	j = 0;
 	i = 0;

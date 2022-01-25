@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 19:05:04 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/24 19:13:27 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/25 19:27:37 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	ftt_convert(const char *str, int i)
 	int	x;
 
 	x = 0;
-
 	while (str[i] >= 48 && str[i] <= 57 && str[i] != '\0')
 	{
 		x = x * 10 + (str[i] - '0');

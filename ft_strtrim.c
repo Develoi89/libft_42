@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:46:06 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/26 18:32:37 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/26 19:58:54 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*res;
 
 	start = 0;
+	if (!s1 || !set)
+		return (NULL);
 	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
 	end = ft_strlen(s1);

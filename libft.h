@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/25 20:02:05 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/26 15:33:39 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,9 @@ int		ft_isascii(int x);
 int		ft_isprint(int x);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *str);
+void 	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memcpy(void *ptr, void *ptr2, size_t n);

@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 15:20:16 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/25 17:36:13 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/26 19:37:38 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,19 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*new;
-	char	*false;
+	size_t	i;
 
 	if (!s)
 		return (NULL);
-	false = ft_strdup("");
-	if (start >= ft_strlen(s) + 1)
-		return (false);
-	new = malloc(len + 1 * sizeof(char));
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (ft_strlen(s) > len)
+		i = len;
+	else
+		i = ft_strlen(s);
+	new = malloc(i + 1 * sizeof(char));
 	if (!new)
 		return (NULL);
-	ft_bzero(new, len +1);
-	ft_strlcpy(new, s + start, len + 1);
+	ft_strlcpy(new, s + start, i + 1);
 	return (new);
 }

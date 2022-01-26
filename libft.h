@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/26 17:36:54 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/26 19:40:29 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	*ft_calloc(size_t count, size_t size);
-void	*ft_memcpy(void *ptr, void *ptr2, size_t n);
+void	*ft_memcpy(void *ptr, const void *ptr2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *ptr, int x, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);

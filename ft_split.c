@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 15:27:21 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/27 20:57:11 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/31 17:36:14 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,16 @@ char	**ft_cleanerror(char	**res, int str)
 	return (NULL);
 }
 
-char	**ft_putword(char **res, const char *s, char c)
+char	**ft_putword(char **res, const char *s, char c, int words)
 {
 	int		i;
 	int		str;
-	int		count;
+	size_t	count;
 
 	i = 0;
 	str = 0;
-	while (s[i] != '\0')
-	{
+	while (str < words)
+	{	
 		if (s[i] != c)
 		{
 			count = 0;
@@ -38,10 +38,10 @@ char	**ft_putword(char **res, const char *s, char c)
 				i++;
 				count++;
 			}
-			res[str] = malloc(count + 1 * sizeof(char));
+			res[str] = malloc((count + 1) * sizeof(char));
 			if (!res[str])
 				return (ft_cleanerror(res, str));
-			ft_strlcpy(res[str], s + (i - count), count +1);
+			ft_strlcpy(res[str], &s[i - count], count + 1);
 			str++;
 		}
 		i++;
@@ -78,21 +78,10 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = ft_words(s, c);
-	res = malloc(words + 1 * sizeof(char *));
+	res = malloc((words + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
-	res = ft_putword(res, s, c);
-	if (res)
-		res[words] = 0;
+	ft_putword(res, s, c, words);
+	res[words] = 0;
 	return (res);
-}
-
-int	main(void)
-{
-	char		**ptr;
-	char const	s[] = "lllcccabcabchjcwq24caaa";
-
-	ptr = ft_split(s, 'c');
-	printf("prueba:%s", ptr[0]);
-	return (0);
 }

@@ -6,12 +6,11 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 19:05:04 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/25 19:27:37 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/01/31 17:36:11 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ftt_isspace(const char *str, int i)
 {

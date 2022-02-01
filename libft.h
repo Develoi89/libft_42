@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/02/01 17:53:38 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/02/01 18:31:57 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char	*ft_itoa(int x);
 char	*ft_strrchr(const char *s, int c);
 char	**ft_split(char const *s, char c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strchr(const char *s, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s1);

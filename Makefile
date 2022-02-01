@@ -19,6 +19,7 @@ SRC		=	ft_main.c \
 			ft_isascii.c \
 			ft_isprint.c \
 			ft_itoa.c \
+			ft_strmapi.c \
 			ft_strtrim.c \
 			ft_memchr.c \
 			ft_memcmp.c \

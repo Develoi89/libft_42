@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 17:41:30 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/02/01 16:17:54 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/02/01 16:55:05 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@ size_t	ftt_intlen(int x)
 
 	aux = x;
 	count = 1;
+	if (x <= -2147483648)
+		return (12);
+	else if (x == 0)
+		return (2);
 	while (aux != 0)
 	{
 		aux = aux / 10;
@@ -48,6 +52,8 @@ char	*ft_itoa(int x)
 	res[ftt_intlen(x) - 1] = '\0';
 	if (x == 0)
 		res[0] = 0 + '0';
+	else if (x == -2147483648)
+		ft_strlcpy(res, "-2147483648", 12);
 	else if (x < 0)
 	{
 		res[0] = '-';
@@ -55,16 +61,5 @@ char	*ft_itoa(int x)
 	}
 	else
 		ftt_putstr(res, x, ftt_intlen(x));
-	printf("prueba%s\n", res);
 	return (res);
-}
-
-int	main()
-{
-	int		x;
-	char	*c;
-
-	x = 0;
-	c = ft_itoa(x);
-	printf("the char is:%s", c);
 }

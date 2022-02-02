@@ -1,6 +1,5 @@
 NAME	=	libft.a
-SRC		=	ft_main.c \
-			ft_atoi.c \
+SRC		=	ft_atoi.c \
 			ft_calloc.c \
 			ft_toupper.c \
 			ft_strrchr.c \
@@ -35,7 +34,9 @@ SRC		=	ft_main.c \
 			ft_memmove.c \
 			ft_bzero.c 
 SRCB	=	ft_lstnew.c \
-			ft_lstadd_front.c 
+			ft_lstadd_front.c \
+			ft_lstsize.c \
+			ft_lstlast.c 
 OBJB	= $(SRCB:%.c=%.o)
 OBJ		= $(SRC:%.c=%.o)
 CFLAGS	= -Wall -Wextra -Werror

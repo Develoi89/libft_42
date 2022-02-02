@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/02/01 18:31:57 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/02/02 16:20:59 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,14 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *ptr, int x, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_bzero(void *ptr, size_t n);
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif /* LIB_H */

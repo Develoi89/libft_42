@@ -34,12 +34,15 @@ SRC		=	ft_main.c \
 			ft_strjoin.c \
 			ft_memmove.c \
 			ft_bzero.c 
+SRCB	=	ft_lstnew.c \
+			ft_lstadd_front.c 
+OBJB	= $(SRCB:%.c=%.o)
 OBJ		= $(SRC:%.c=%.o)
 CFLAGS	= -Wall -Wextra -Werror
 CC		= gcc
 
 $(NAME): $(OBJ)
-	ar -rc $(NAME) $(OBJ)
+	ar rc $(NAME) $(OBJ)
 
 .PHONY : clean
 clean:
@@ -54,5 +57,8 @@ all: $(NAME)
 
 .PHONY : re
 re: fclean all
-	 
-	
+
+.PHONY : bonus
+bonus: $(OBJB)
+	ar rc $(NAME) $(OBJB)
+	 	

@@ -40,6 +40,7 @@ SRCB	=	ft_lstnew.c \
 			ft_lstdelone.c \
 			ft_lstiter.c \
 			ft_lstclear.c \
+			ft_lstmap.c \
 			ft_lstlast.c 
 OBJB	= $(SRCB:%.c=%.o)
 OBJ		= $(SRC:%.c=%.o)

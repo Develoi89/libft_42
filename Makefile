@@ -1,4 +1,5 @@
 NAME	=	libft.a
+
 SRC		=	ft_atoi.c \
 			ft_calloc.c \
 			ft_toupper.c \
@@ -32,7 +33,16 @@ SRC		=	ft_atoi.c \
 			ft_memset.c \
 			ft_strjoin.c \
 			ft_memmove.c \
-			ft_bzero.c 
+			ft_bzero.c \
+			ft_printf.c \
+			ft_putchar.c \
+			ft_putdoble.c \
+			ft_puthex.c \
+			ft_putposnbr.c \
+			ft_putpost.c \
+			ft_putstr.c \
+			ft_putuphex.c 
+
 SRCB	=	ft_lstnew.c \
 			ft_lstadd_front.c \
 			ft_lstsize.c \

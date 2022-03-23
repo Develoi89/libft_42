@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/03/23 15:55:14 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/03/23 16:08:12 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,16 @@
 # include <string.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdarg.h>
 
+int		ft_putuphex(unsigned int i);
+int		ft_putstr(char	*s);
+int		ft_putpost(unsigned long long ptr);
+int		ft_putposnbr(unsigned int i);
+int		ft_puthex(unsigned int i);
+int		ft_putdoble(int i);
+int		ft_putchar(int c);
+int		ft_printf(const char *input, ...);
 int		ft_toupper(int c);
 char	*ft_itoa(int x);
 char	*ft_strrchr(const char *s, int c);

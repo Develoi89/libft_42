@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:03:13 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/03/23 16:08:12 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:47:54 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, char *src, size_t x);
 int		ft_strncmp(const char *str, const char *str2, size_t n);
+int		ft_strrncmp(const char *str, const char *str2, size_t n);
 int		ft_isdigit(int x);
 int		ft_isalpha(int x);
 int		ft_isalnum(int x);

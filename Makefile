@@ -13,6 +13,7 @@ SRC		=	ft_atoi.c \
 			ft_substr.c \
 			ft_strlcat.c \
 			ft_strncmp.c \
+			ft_strrncmp.c \
 			ft_isdigit.c \
 			ft_isalpha.c \
 			ft_isalnum.c \
@@ -52,6 +53,7 @@ SRCB	=	ft_lstnew.c \
 			ft_lstclear.c \
 			ft_lstmap.c \
 			ft_lstlast.c 
+			
 OBJB	= $(SRCB:%.c=%.o)
 OBJ		= $(SRC:%.c=%.o)
 CFLAGS	= -Wall -Wextra -Werror

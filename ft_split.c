@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: develoi89 <develoi89@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 15:27:21 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/04/11 15:36:18 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/07/07 18:33:56 by develoi89        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 char	**ft_cleanerror(char	**res, int str)
 {
-	while (str--)
-		free(res[str]);
+	if (str > 0)
+	{
+		while (str--)
+			free(res[str]);
+	}
 	free(res);
 	return (NULL);
 }
@@ -78,10 +81,9 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = ft_words(s, c);
-	res = malloc((words + 1) * sizeof(char *));
+	res = (char **)malloc((words + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
-	ft_putword(res, s, c, words);
-	res[words] = 0;
-	return (res);
+	res[words] = NULL;
+	return (ft_putword(res, s, c, words));
 }

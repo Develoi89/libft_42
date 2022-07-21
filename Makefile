@@ -59,7 +59,7 @@ OBJ		= $(SRC:%.c=%.o)
 CFLAGS	= -Wall -Wextra -Werror
 CC		= gcc
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) libft.h
 	ar rc $(NAME) $(OBJ)
 
 .PHONY : clean

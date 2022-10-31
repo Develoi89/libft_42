@@ -4,15 +4,15 @@
     <h1 align="center"> Libft_42</h1>
 </head>
 <body>
-    <h3>Abaut Libft:</h3>
+    <h3>About Libft:</h3>
     <p>
         The main idea of ​​this project is to recreate some of the functions of "c" with our own code to understand how it works and create a library that we will expand over time and that will help us in our future projects.<br>
         From the simplest functions like toupper that modifies alphabet characters from lowercase to uppercase to functions like atoi that allow us to convert data from chars to int or functions that through lists allow us to create and manipulate dynamic data structures, included in the bonus part.
     </p>
     <h3>Compiling...⏱️</h3>
     <p>
-        For compile the library I use a Makefile, this is usefull for including the library and compiling in others projects, but, if you want to prove any Libft's concret functión maby is eaiest that you create an main.c file for test it.<br>
-        All functions are called ft_xxxx.c for avoid conflicts with c's own functions, maby you found in this library another functions thad I added after finish the libft project and do not appear in the <a href="https://github.com/Develoi89/libft_42/blob/main/.readmedata/en.subject.pdf" target="blank" >subject</a>.
+        To compile the library I use a Makefile, this is usefull for including the library and compiling in others projects, but, if you want to prove any Libft's concret functión maby is eaiest that you create an main.c file for test it.<br>
+        All functions are called ft_xxxx.c for avoid conflicts with c's own functions, maby you found in this library another functions that I added after finish the libft project and do not appear in the <a href="https://github.com/Develoi89/libft_42/blob/main/.readmedata/en.subject.pdf" target="blank" >subject</a>.
     </p>
     <h3>Grade</h3>
     <p>
